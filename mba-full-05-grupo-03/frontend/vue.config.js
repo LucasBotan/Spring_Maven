@@ -1,10 +1,7 @@
 const { defineConfig } = require('@vue/cli-service');
 
-module.exports = defineConfig({
-  transpileDependencies: true,
+module.exports = {
   devServer: {
-         allowedHosts: [
-      'doacao.up.railway.app'
-    ]
-    }
-});
+    disableHostCheck: true,
+  },
+};
